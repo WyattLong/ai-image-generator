@@ -23,11 +23,6 @@ h1 {
     color: whitesmoke;
     background: none;  
 }
-
-p {
-    position: absolute;
-    bottom: 10px;
-}
   
 .card {
   display: flex;
@@ -57,9 +52,6 @@ p {
     width: 50%;
     margin-bottom: 20px;
     border: 2px solid whitesmoke;  
-}
-
-.btn-container {
 }
 
 .cancel-btn {
@@ -96,4 +88,27 @@ p {
 .cancel-btn:hover, .gen-btn:hover, .download-btn:hover {
     background: gainsboro;
 }
-  
+
+@media(max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        border: none;
+    }
+      
+    .display-container {
+        width: 100%;
+    }
+      
+    .prompt-input {
+        width: 100%;
+    }
+      
+    .download-btn {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;  
+    }      
+}
